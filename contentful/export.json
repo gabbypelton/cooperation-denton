@@ -500,31 +500,31 @@
             },
             "fields": {
                 "name": {
-                    "en-US": "John Doe"
+                    "en-US": "Cooperation Denton"
                 },
                 "title": {
-                    "en-US": "Web Developer"
+                    "en-US": "Decentralize - Harmonize - Cooperate - Elevate"
                 },
                 "company": {
                     "en-US": "ACME"
                 },
                 "shortBio": {
-                    "en-US": "Research and recommendations for modern stack websites."
+                    "en-US": ""
                 },
                 "email": {
-                    "en-US": "john@doe.com"
+                    "en-US": ""
                 },
                 "phone": {
-                    "en-US": "0176 / 1234567"
+                    "en-US": ""
                 },
                 "facebook": {
-                    "en-US": "johndoe"
+                    "en-US": ""
                 },
                 "twitter": {
-                    "en-US": "johndoe"
+                    "en-US": "CooperationdTX"
                 },
                 "github": {
-                    "en-US": "johndoe"
+                    "en-US": ""
                 },
                 "image": {
                     "en-US": {
