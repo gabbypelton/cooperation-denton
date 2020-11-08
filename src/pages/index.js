@@ -17,7 +17,7 @@ class RootIndex extends React.Component {
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
           {sections.map((section, index) => {
-            if (index % 2 === 0) {
+            if (section.node_locale === "en-US") {
               return (
                 <div style={{ padding: "0 2% 1rem 2%" }}>
                   <h1>{section.title}</h1>
@@ -56,6 +56,7 @@ export const pageQuery = graphql`
   query HomeQuery {
     allContentfulSection(sort: { fields: createdAt, order: ASC }) {
       nodes {
+        node_locale
         id
         title
         body {
