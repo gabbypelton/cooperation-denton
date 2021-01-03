@@ -14,6 +14,9 @@ export default () => (
       <li className={styles.navigationItem}>
         <Link to="/contact/">Contact</Link>
       </li>
+      <li className={styles.navigationItem}>
+        <a href="https://forms.gle/ZReCP2RDc6mpeNsr6">Get Involved</a>
+      </li>
     </ul>
   </nav>
 );
