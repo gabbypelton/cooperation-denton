@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import get from "lodash/get";
 import { Helmet } from "react-helmet";
+import Img from "gatsby-image";
 
 import Hero from "../components/hero";
 import Layout from "../components/layout";
@@ -16,7 +17,7 @@ class RootIndex extends React.Component {
       <Layout location={this.props.location}>
         <div style={{ background: "#fff" }}>
           <Helmet title={siteTitle} />
-          <Hero data={author.node} />
+          <Img alt={author.node.name} fluid={author.node.heroImage.fluid} />
           {sections.map((section, index) => {
             if (section.node_locale === "en-US") {
               return (
@@ -80,12 +81,7 @@ export const pageQuery = graphql`
           }
           title
           heroImage: image {
-            fluid(
-              maxWidth: 1180
-              maxHeight: 480
-              resizingBehavior: PAD
-              background: "rgb:000000"
-            ) {
+            fluid(maxWidth: 1180, maxHeight: 300, resizingBehavior: PAD) {
               ...GatsbyContentfulFluid_tracedSVG
             }
           }
