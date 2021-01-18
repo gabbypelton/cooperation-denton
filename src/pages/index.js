@@ -4,7 +4,6 @@ import get from "lodash/get";
 import { Helmet } from "react-helmet";
 import Img from "gatsby-image";
 
-import Hero from "../components/hero";
 import Layout from "../components/layout";
 
 class RootIndex extends React.Component {
@@ -56,7 +55,7 @@ export default RootIndex;
 
 export const pageQuery = graphql`
   query HomeQuery {
-    allContentfulSection(sort: { fields: createdAt, order: ASC }) {
+    allContentfulSection(sort: { fields: pageOrder, order: ASC }) {
       nodes {
         node_locale
         id
