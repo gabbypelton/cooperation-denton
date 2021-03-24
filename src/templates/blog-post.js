@@ -10,7 +10,7 @@ import heroStyles from "../components/hero.module.css";
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, "data.contentfulBlogPost");
-    const siteTitle = "Cooperation Denton" // get(this.props, "data.site.siteMetadata.title");
+    const siteTitle = "Cooperation Denton"; // get(this.props, "data.site.siteMetadata.title");
 
     return (
       <Layout location={this.props.location}>
@@ -37,11 +37,15 @@ class BlogPostTemplate extends React.Component {
                 __html: post.body.childMarkdownRemark.html,
               }}
             />
-            <p>
-              <a href="https://forms.gle/ZReCP2RDc6mpeNsr6">
-                Click here to get involved!
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <a
+                style={{ marginRight: "2%" }}
+                href="https://forms.gle/ZReCP2RDc6mpeNsr6"
+              >
+                Join
               </a>
-            </p>
+              <a href="https://opencollective.com/cooperation-denton">Donate</a>
+            </div>
           </div>
         </div>
       </Layout>
