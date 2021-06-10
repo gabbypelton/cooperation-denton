@@ -20,6 +20,9 @@ export default () => (
       <li className={styles.navigationItem}>
         <a href="https://opencollective.com/cooperation-denton">Donate</a>
       </li>
+      <li className={styles.navigationItem}>
+        <a href="https://denton.timebanks.org">Abolish Money</a>
+      </li>
     </ul>
   </nav>
 );
